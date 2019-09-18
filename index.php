@@ -12,60 +12,69 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">
-            <img src="img/logo.svg" width="30" height="30" alt="">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+    <?php
+        include("includes/navbar.php");
+    ?>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Dropdown
-                    </a>
-
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
-        </div>
-    </nav>
-
-    <section>
-        <aside>
+    <section class="wrapper">
+        <aside class="sidebar">
+            <h2>Sidebar</h2>
             <ul>
-                <li><a href="">Usuarios</a></li>
+                <li><a href="#"><i class="fas fa-users"></i> Usuarios</a></li>
             </ul>
         </aside>
-        <div id="contenedor-principal"></div>
+        <div class="contenedor-principal">
+            <div class="header">
+                <h3>Home</h3>
+                <div class="boton-nuevo">
+                    <a href="#"><i class="fas fa-user-plus" title="Añadir nuevo usuario"></i></a>
+                </div>
+            </div>
+            <div class="info">
+                <table class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Apellido</th>
+                            <th scope="col">Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Alan</td>
+                            <td>Salas</td>
+                            <td><a href="#"><i class="fas fa-edit" title="Editar"></i></a> <a href="#"><i class="fas fa-trash-alt" title="Eliminar"></i></a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Armando</td>
+                            <td>Robles</td>
+                            <td><a href="#"><i class="fas fa-edit" title="Editar"></i></a> <a href="#"><i class="fas fa-trash-alt" title="Eliminar"></i></a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Luis</td>
+                            <td>Vazquez</td>
+                            <td><a href="#"><i class="fas fa-edit" title="Editar"></i></a> <a href="#"><i class="fas fa-trash-alt" title="Eliminar"></i></a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Ruben</td>
+                            <td>Tellez</td>
+                            <td><a href="#"><i class="fas fa-edit" title="Editar"></i></a> <a href="#"><i class="fas fa-trash-alt" title="Eliminar"></i></a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </section>
 
     <footer>
         <p><i class="fas fa-user-lock"></i> Sistema desarrollado por La Logia Corp.</p>
     </footer>
-    
+
     <script src="https://code.jquery.com/jquery-3.3.1.min.js">
     </script>
     <script src="https://use.fontawesome.com/releases/v5.10.2/js/all.js" data-auto-replace-svg="nest"></script>
