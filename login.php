@@ -7,8 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Login</title>
     <link rel="stylesheet" href="css/estilo_login.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
 <body>
@@ -16,15 +14,15 @@
     <div class="login-page">
         <div class="form">
             <form class="register-form">
-                <input type="text" placeholder="name" />
-                <input type="password" placeholder="password" />
-                <input type="text" placeholder="email address" />
+                <input type="text" placeholder="Nombre"/>
+                <input type="password" placeholder="Contraseña"/>
+                <input type="text" placeholder="Email"/>
                 <button>Registrarse</button>
                 <p class="message"><a href="#">Login</a></p>
             </form>
             <form class="login-form">
-                <input type="text" placeholder="username" />
-                <input type="password" placeholder="password" />
+                <input type="text" placeholder="Email"/>
+                <input type="password" placeholder="Contraseña"/>
                 <button>Login</button>
                 <p class="message"><a href="#">Registrarse</a></p>
             </form>
