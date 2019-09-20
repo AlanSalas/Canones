@@ -17,12 +17,9 @@
     ?>
 
     <section class="wrapper">
-        <aside class="sidebar">
-            <h2>Sidebar</h2>
-            <ul>
-                <li><a href="#"><i class="fas fa-users"></i> Usuarios</a></li>
-            </ul>
-        </aside>
+    <?php
+        include("includes/sidebar.php");
+    ?>
         <div class="contenedor-principal">
             <div class="header">
                 <h3>Home</h3>
@@ -31,42 +28,7 @@
                 </div>
             </div>
             <div class="info">
-                <table class="table">
-                    <thead class="thead-dark">
-                        <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">Nombre</th>
-                            <th scope="col">Apellido</th>
-                            <th scope="col">Acciones</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Alan</td>
-                            <td>Salas</td>
-                            <td><a href="#"><i class="fas fa-edit" title="Editar"></i></a> <a href="#"><i class="fas fa-trash-alt" title="Eliminar"></i></a></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Armando</td>
-                            <td>Robles</td>
-                            <td><a href="#"><i class="fas fa-edit" title="Editar"></i></a> <a href="#"><i class="fas fa-trash-alt" title="Eliminar"></i></a></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td>Luis</td>
-                            <td>Vazquez</td>
-                            <td><a href="#"><i class="fas fa-edit" title="Editar"></i></a> <a href="#"><i class="fas fa-trash-alt" title="Eliminar"></i></a></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">4</th>
-                            <td>Ruben</td>
-                            <td>Tellez</td>
-                            <td><a href="#"><i class="fas fa-edit" title="Editar"></i></a> <a href="#"><i class="fas fa-trash-alt" title="Eliminar"></i></a></td>
-                        </tr>
-                    </tbody>
-                </table>
+                <p>Sistema para administrar el apartado de cañones</p>
             </div>
         </div>
     </section>

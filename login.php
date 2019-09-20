@@ -18,29 +18,21 @@
                 <input type="password" placeholder="Contraseña"/>
                 <input type="text" placeholder="Email"/>
                 <button>Registrarse</button>
-                <p class="message"><a href="#">Login</a></p>
+                <p class="message"><a href="#">Login</a> <i class="fas fa-sign-in-alt fa-lg"></i></p>
             </form>
             <form class="login-form">
                 <input type="text" placeholder="Email"/>
                 <input type="password" placeholder="Contraseña"/>
                 <button>Login</button>
-                <p class="message"><a href="#">Registrarse</a></p>
+                <p class="message"><a href="#">Registrarse</a> <i class="fas fa-user-plus fa-lg"></i></p>
             </form>
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js">
     </script>
     <script src="https://use.fontawesome.com/releases/v5.10.2/js/all.js" data-auto-replace-svg="nest"></script>
-    </script>
-
-    <script>
-        $('.message a').click(function () {
-            $('form').animate({
-                height: "toggle",
-                opacity: "toggle"
-            }, "slow");
-        });
-    </script>
+    
+    <script src="js/funcion_login.js"></script>
 </body>
 
 </html>
