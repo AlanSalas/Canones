@@ -11,7 +11,6 @@
 </head>
 
 <body>
-
     <div class="login-page">
         <div class="form">
             <form class="register-form">
@@ -33,7 +32,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js">
     </script>
     <script src="https://use.fontawesome.com/releases/v5.10.2/js/all.js" data-auto-replace-svg="nest"></script>
-    
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="js/funcion_login.js"></script>
 </body>
 
