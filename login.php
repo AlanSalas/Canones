@@ -1,3 +1,4 @@
+<!-- Si la sesion existe redireccionar a login-->
 <!DOCTYPE html>
 <html lang="mx">
 
@@ -20,10 +21,11 @@
                 <button>Registrarse</button>
                 <p class="message"><a href="#">Login</a> <i class="fas fa-sign-in-alt fa-lg"></i></p>
             </form>
-            <form class="login-form">
-                <input type="text" placeholder="Email"/>
-                <input type="password" placeholder="Contraseña"/>
-                <button>Login</button>
+            <form class="login-form" id="login-form">
+                <input type="text" placeholder="Email" name="usuario" id="inputEmail"/>
+                <input type="password" placeholder="Contraseña" name="password" id="inputPassword"/>
+                <button type="button" id="btn-login">Login</button>
+                <input type="checkbox" name="recordar">
                 <p class="message"><a href="#">Registrarse</a> <i class="fas fa-user-plus fa-lg"></i></p>
             </form>
         </div>

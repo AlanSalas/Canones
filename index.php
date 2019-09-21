@@ -1,3 +1,4 @@
+<!-- Si la sesion existe mostrar la pagina, sino redireccionar a login-->
 <!DOCTYPE html>
 <html lang="mx">
 
@@ -23,9 +24,6 @@
         <div class="contenedor-principal">
             <div class="header">
                 <h3>Home</h3>
-                <div class="boton-nuevo">
-                    <a href="#"><i class="fas fa-user-plus" title="Añadir nuevo usuario"></i></a>
-                </div>
             </div>
             <div class="info">
                 <p>Sistema para administrar el apartado de cañones</p>
