@@ -10,7 +10,6 @@ $(document).ready(function () {
                 obj[$(this).prop("name")] = $(this).prop("checked");
             }
         });
-        //console.log(obj);
         $.post("includes/funciones.php", obj, function (respuesta) {
             r = respuesta;
             if (r.status == 3) {
@@ -39,12 +38,13 @@ $(document).ready(function () {
                 swal("¡ERROR!", "Usuario no registrado", "error");
             }
         }, "JSON");
-
-        $('.message a').click(function () {
-            $('form').animate({
-                height: "toggle",
-                opacity: "toggle"
-            }, "slow");
-        });
+        // console.log(obj);
+    });
+    
+    $('.message a').click(function () {
+        $('form').animate({
+            height: "toggle",
+            opacity: "toggle"
+        }, "slow");
     });
 });

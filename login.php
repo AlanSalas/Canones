@@ -13,6 +13,8 @@
 <body>
     <div class="login-page">
         <div class="form">
+        <img src="img/60765.svg" class="fondo">
+        <img src="img/login_ico.svg" class="ico">
             <form class="register-form">
                 <input type="text" placeholder="Nombre"/>
                 <input type="password" placeholder="Contraseña"/>
@@ -23,8 +25,11 @@
             <form class="login-form" id="login-form">
                 <input type="text" placeholder="Email" name="usuario" id="inputEmail"/>
                 <input type="password" placeholder="Contraseña" name="password" id="inputPassword"/>
+                <div class="box">
+                    <input type="checkbox" name="recordar" id="recordar">
+                    <label for="recordar">Recordar credenciales</label>
+                </div>
                 <button type="button" id="btn-login">Login</button>
-                <input type="checkbox" name="recordar">
                 <p class="message"><a href="#">Registrarse</a> <i class="fas fa-user-plus fa-lg"></i></p>
             </form>
         </div>
