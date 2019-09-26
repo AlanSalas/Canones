@@ -1,5 +1,9 @@
 <?php
     require_once("../../includes/funciones.php");
+	session_start();
+	error_reporting(0);
+	$varsesion = $_SESSION['email'];
+	if (isset($varsesion)){
 ?>
 <!DOCTYPE html>
 <html lang="mx">
@@ -103,3 +107,8 @@
 </body>
 
 </html>
+<?php
+	}else{
+		header("Location: ../../login.php");
+	}
+?>

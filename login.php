@@ -1,4 +1,3 @@
-<!-- Si la sesion existe redireccionar a login-->
 <!DOCTYPE html>
 <html lang="mx">
 

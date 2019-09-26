@@ -1,4 +1,3 @@
-<!-- Si la sesion existe mostrar la pagina, sino redireccionar a login-->
 <?php
 	session_start();
 	error_reporting(0);
